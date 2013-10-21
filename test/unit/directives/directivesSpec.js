@@ -14,7 +14,7 @@ describe("Unit: Testing Directives", function() {
     }]
   ));
 
-  it("should display the welcome text properly", function() {
+  xit("should display the welcome text properly", function() {
     var element = $compile('<div data-app-welcome>User</div>')($rootScope);
     expect(element.html()).to.match(/Welcome/i);
   })

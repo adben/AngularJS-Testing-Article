@@ -3,12 +3,12 @@ var shared = function(config) {
     basePath: '../',
     frameworks: ['mocha'],
     reporters: ['progress'],
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     autoWatch: true,
 
     // these are default values anyway
     singleRun: false,
-    colors: true,
+    colors: true
   });
 };
 
@@ -16,7 +16,7 @@ shared.files = [
   'test/mocha.conf.js',
 
   //3rd Party Code
-  'components/angularjs/index.js',
+  'bower_components/angularjs/index.js',
   'app/scripts/lib/router.js',
 
   //App-specific Code
